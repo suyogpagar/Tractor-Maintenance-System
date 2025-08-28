@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)http://localhost/vehicle_service/admin/?page=system_info -->
+<html lang="en" class="" style="height: auto;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>Tractor Service Management System</title>
+    <link rel="icon" href="./Tractor Service Management System_files/1632965940_vrs-logo.jpg">
+    <!-- Google Font: Source Sans Pro -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback"> -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./Tractor Service Management System_files/all.min.css">
+    <!-- Ionicons -->
+    <!-- <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="./Tractor Service Management System_files/tempusdominus-bootstrap-4.min.css">
+      <!-- DataTables -->
+  <link rel="stylesheet" href="./Tractor Service Management System_files/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="./Tractor Service Management System_files/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="./Tractor Service Management System_files/buttons.bootstrap4.min.css">
+   <!-- Select2 -->
+  <link rel="stylesheet" href="./Tractor Service Management System_files/select2.min.css">
+  <link rel="stylesheet" href="./Tractor Service Management System_files/select2-bootstrap4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="./Tractor Service Management System_files/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="./Tractor Service Management System_files/jqvmap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="./Tractor Service Management System_files/adminlte.css">
+    <link rel="stylesheet" href="./Tractor Service Management System_files/custom.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="./Tractor Service Management System_files/OverlayScrollbars.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="./Tractor Service Management System_files/daterangepicker.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="./Tractor Service Management System_files/summernote-bs4.min.css">
+     <!-- SweetAlert2 -->
+  <link rel="stylesheet" href="./Tractor Service Management System_files/bootstrap-4.min.css">
+    <style type="text/css">/* Chart.js */
+      @keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}
+    </style>
+
+     <!-- jQuery -->
+    <script src="./Tractor Service Management System_files/jquery.min.js.download"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="./Tractor Service Management System_files/jquery-ui.min.js.download"></script>
+    <!-- SweetAlert2 -->
+    <script src="./Tractor Service Management System_files/sweetalert2.min.js.download"></script>
+    <!-- Toastr -->
+    <script src="./Tractor Service Management System_files/toastr.min.js.download"></script>
+    <script>
+        var _base_url_ = 'http://localhost/vehicle_service/';
+    </script>
+    <script src="./Tractor Service Management System_files/script.js.download"></script>
+
+  </head>  <body class="sidebar-mini layout-fixed control-sidebar-slide-open layout-navbar-fixed dark-mode sidebar-mini-md sidebar-mini-xs sidebar-closed sidebar-collapse" data-new-gr-c-s-check-loaded="14.991.0" data-gr-ext-installed="" style="height: auto;">
+    <div class="wrapper">
+     <style>
+  .user-img{
+        position: absolute;
+        height: 27px;
+        width: 27px;
+        object-fit: cover;
+        left: -7%;
+        top: -12%;
+  }
+  .btn-rounded{
+        border-radius: 50px;
+  }
+</style>
+<!-- Navbar -->
+      <nav class="main-header navbar navbar-expand navbar-dark border border-light border-top-0  border-left-0 border-right-0 navbar-light text-sm">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="http://localhost/vehicle_service/admin/?page=system_info#" role="button"><i class="fas fa-bars"></i></a>
+          </li>
+          <li class="nav-item d-none d-sm-inline-block">
+            <a href="http://localhost/vehicle_service/" class="nav-link">Tractor Service Management System - Admin</a>
+          </li>
+        </ul>
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+          <!-- Navbar Search -->
+          <!-- <li class="nav-item">
+            <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+            <i class="fas fa-search"></i>
+            </a>
+            <div class="navbar-search-block">
+              <form class="form-inline">
+                <div class="input-group input-group-sm">
+                  <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                  <div class="input-group-append">
+                    <button class="btn btn-navbar" type="submit">
+                    <i class="fas fa-search"></i>
+                    </button>
+                    <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                    <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </li> -->
+          <!-- Messages Dropdown Menu -->
+          <li class="nav-item">
+            <div class="btn-group nav-link">
+                  <button type="button" class="btn btn-rounded badge badge-light dropdown-toggle dropdown-icon" data-toggle="dropdown">
+                    <span><img src="./Tractor Service Management System_files/1624240500_avatar.png" class="img-circle elevation-2 user-img" alt="User Image"></span>
+                    <span class="ml-3">Adminstrator Admin</span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu" role="menu">
+                    <a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=user"><span class="fa fa-user"></span> My Account</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="http://localhost/vehicle_service//classes/Login.php?f=logout"><span class="fas fa-sign-out-alt"></span> Logout</a>
+                  </div>
+              </div>
+          </li>
+          <li class="nav-item">
+            
+          </li>
+         <!--  <li class="nav-item">
+            <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+            <i class="fas fa-th-large"></i>
+            </a>
+          </li> -->
+        </ul>
+      </nav>
+      <!-- /.navbar -->     
+<!-- Main Sidebar Container -->
+      <aside class="main-sidebar sidebar-dark-primary elevation-4 sidebar-no-expand">
+        <!-- Brand Logo -->
+        <a href="http://localhost/vehicle_service/admin" class="brand-link bg-primary text-sm">
+        <img src="./Tractor Service Management System_files/1632965940_vrs-logo.jpg" alt="Store Logo" class="brand-image img-circle elevation-3" style="opacity: .8;width: 2.5rem;height: 2.5rem;max-height: unset">
+        <span class="brand-text font-weight-light">SSS Tractor Service</span>
+        </a>
+        <!-- Sidebar -->
+        <div class="sidebar os-host os-theme-light os-host-overflow os-host-overflow-y os-host-resize-disabled os-host-transition os-host-scrollbar-horizontal-hidden">
+          <div class="os-resize-observer-host observed">
+            <div class="os-resize-observer" style="left: 0px; right: auto;"></div>
+          </div>
+          <div class="os-size-auto-observer observed" style="height: calc(100% + 1px); float: left;">
+            <div class="os-resize-observer"></div>
+          </div>
+          <div class="os-content-glue" style="margin: 0px -8px; width: 249px; height: 646px;"></div>
+          <div class="os-padding">
+            <div class="os-viewport os-viewport-native-scrollbars-invisible" style="overflow-y: scroll;">
+              <div class="os-content" style="padding: 0px 8px; height: 100%; width: 100%;">
+                <!-- Sidebar user panel (optional) -->
+                <div class="clearfix"></div>
+                <!-- Sidebar Menu -->
+                <nav class="mt-4">
+                   <ul class="nav nav-pills nav-sidebar flex-column text-sm nav-compact nav-flat nav-child-indent nav-collapse-hide-child" data-widget="treeview" role="menu" data-accordion="false">
+                    <li class="nav-item dropdown">
+                      <a href="http://localhost/vehicle_service/admin/" class="nav-link nav-home">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>
+                          Dashboard
+                        </p>
+                      </a>
+                    </li> 
+                    <li class="nav-item dropdown">
+                      <a href="http://localhost/vehicle_service/admin/?page=mechanics" class="nav-link nav-mechanics">
+                        <i class="nav-icon fas fa-users-cog"></i>
+                        <p>
+                          Mechanic List
+                        </p>
+                      </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a href="http://localhost/vehicle_service/admin/?page=service_requests" class="nav-link nav-service_requests">
+                        <i class="nav-icon fas fa-file-invoice"></i>
+                        <p>
+                          Service Requests
+                        </p>
+                      </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a href="http://localhost/vehicle_service/admin/?page=report" class="nav-link nav-report">
+                        <i class="nav-icon fas fa-file"></i>
+                        <p>
+                          Report
+                        </p>
+                      </a>
+                    </li>
+                                        <li class="nav-header">Maintenance</li>
+                    <li class="nav-item dropdown">
+                      <a href="http://localhost/vehicle_service/admin/?page=maintenance/category" class="nav-link nav-maintenance/category">
+                        <i class="nav-icon fas fa-th-list"></i>
+                        <p>
+                          Category List
+                        </p>
+                      </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a href="http://localhost/vehicle_service/admin/?page=maintenance/services" class="nav-link nav-maintenance/services">
+                        <i class="nav-icon fas fa-th-list"></i>
+                        <p>
+                          Service List
+                        </p>
+                      </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a href="http://localhost/vehicle_service/admin/?page=user/list" class="nav-link nav-user_list">
+                        <i class="nav-icon fas fa-users"></i>
+                        <p>
+                          User List
+                        </p>
+                      </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a href="http://localhost/vehicle_service/admin/?page=system_info" class="nav-link nav-system_info active">
+                        <i class="nav-icon fas fa-cogs"></i>
+                        <p>
+                          Settings
+                        </p>
+                      </a>
+                    </li>
+                                      </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+              </div>
+            </div>
+          </div>
+          <div class="os-scrollbar os-scrollbar-horizontal os-scrollbar-unusable os-scrollbar-auto-hidden">
+            <div class="os-scrollbar-track">
+              <div class="os-scrollbar-handle" style="width: 100%; transform: translate(0px, 0px);"></div>
+            </div>
+          </div>
+          <div class="os-scrollbar os-scrollbar-vertical os-scrollbar-auto-hidden">
+            <div class="os-scrollbar-track">
+              <div class="os-scrollbar-handle" style="height: 55.017%; transform: translate(0px, 0px);"></div>
+            </div>
+          </div>
+          <div class="os-scrollbar-corner"></div>
+        </div>
+        <!-- /.sidebar -->
+      </aside>
+      <script>
+    $(document).ready(function(){
+      var page = 'system_info';
+      var s = '';
+      page = page.split('/');
+      page = page[0];
+      if(s!='')
+        page = page+'_'+s;
+
+      if($('.nav-link.nav-'+page).length > 0){
+             $('.nav-link.nav-'+page).addClass('active')
+        if($('.nav-link.nav-'+page).hasClass('tree-item') == true){
+            $('.nav-link.nav-'+page).closest('.nav-treeview').siblings('a').addClass('active')
+          $('.nav-link.nav-'+page).closest('.nav-treeview').parent().addClass('menu-open')
+        }
+        if($('.nav-link.nav-'+page).hasClass('nav-is-tree') == true){
+          $('.nav-link.nav-'+page).parent().addClass('menu-open')
+        }
+
+      }
+     
+    })
+  </script>              
+           <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper bg-dark pt-3" style="min-height: 498.75px;">
+     
+        <!-- Main content -->
+        <section class="content  text-dark">
+          <div class="container-fluid">
+            
+<style>
+	img#cimg{
+		height: 15vh;
+		width: 15vh;
+		object-fit: cover;
+		border-radius: 100% 100%;
+	}
+	img#cimg2{
+		height: 50vh;
+		width: 100%;
+		object-fit: contain;
+		/* border-radius: 100% 100%; */
+	}
+</style>
+<div class="col-lg-12">
+	<div class="card card-outline card-primary">
+		<div class="card-header">
+			<h5 class="card-title">System Information</h5>
+			<!-- <div class="card-tools">
+				<a class="btn btn-block btn-sm btn-default btn-flat border-primary new_department" href="javascript:void(0)"><i class="fa fa-plus"></i> Add New</a>
+			</div> -->
+		</div>
+		<div class="card-body">
+			<form action="http://localhost/vehicle_service/admin/?page=system_info" id="system-frm">
+				<div id="msg" class="form-group"></div>
+				<div class="form-group">
+					<label for="name" class="control-label">System Name</label>
+					<input type="text" class="form-control form-control-sm" name="name" id="name" value="Tractor Service Management System">
+				</div>
+				<div class="form-group">
+					<label for="short_name" class="control-label">System Short Name</label>
+					<input type="text" class="form-control form-control-sm" name="short_name" id="short_name" value="SSS Tractor Service">
+				</div>
+			<div class="form-group">
+				<label for="" class="control-label">About Us</label>
+	             <textarea name="about_us" id="" cols="30" rows="2" class="form-control summernote" style="display: none;">&lt;p style="text-align: center; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding: 0px; font-family: DauphinPlain; font-size: 70px; line-height: 90px;"&gt;About Us&lt;/p&gt;&lt;hr style="margin: 0px; padding: 0px; clear: both; border-top: 0px; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));"&gt;&lt;div id="Content" style="margin: 0px; padding: 0px; position: relative;"&gt;&lt;div id="bannerL" style="margin: 0px 0px 0px -160px; padding: 0px; position: sticky; top: 20px; width: 160px; height: 10px; float: left; text-align: right; color: rgb(0, 0, 0); font-family: " open="" sans",="" arial,="" sans-serif;="" font-size:="" 14px;="" background-color:="" rgb(255,="" 255,="" 255);"=""&gt;&lt;/div&gt;&lt;div id="bannerR" style="margin: 0px -160px 0px 0px; padding: 0px; position: sticky; top: 20px; width: 160px; height: 10px; float: right; color: rgb(0, 0, 0); font-family: " open="" sans",="" arial,="" sans-serif;="" font-size:="" 14px;="" background-color:="" rgb(255,="" 255,="" 255);"=""&gt;&lt;/div&gt;&lt;div class="boxed" style="margin: 10px 28.7969px; padding: 0px; clear: both; color: rgb(0, 0, 0); font-family: " open="" sans",="" arial,="" sans-serif;="" font-size:="" 14px;="" text-align:="" center;="" background-color:="" rgb(255,="" 255,="" 255);"=""&gt;&lt;div id="lipsum" style="margin: 0px; padding: 0px; text-align: justify;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;ul style="margin: 12px 0px 0px; display: flex; flex-direction: column; gap: 4px; padding-inline-start: 24px; color: rgb(17, 17, 17); font-family: -apple-system, Roboto, SegoeUI, "Segoe UI", "Helvetica Neue", Helvetica, "Microsoft YaHei", "Meiryo UI", Meiryo, "Arial Unicode MS", sans-serif; background-color: rgb(255, 255, 255);"&gt;&lt;li&gt;&lt;span style="font-weight: bolder;"&gt;1) Service Quality&lt;/span&gt;: Providing high-quality service that meets or exceeds customer expectations.&lt;/li&gt;&lt;li&gt;&lt;span style="font-weight: bolder;"&gt;2) Energizing Relationship&lt;/span&gt;: Actively engaging with customers, understanding their needs, and building strong relationships.&lt;/li&gt;&lt;li&gt;&lt;span style="font-weight: bolder;"&gt;3) Value Added Service&lt;/span&gt;: Beyond core tractor servicing, they offer additional services to enhance the overall customer experience.&lt;/li&gt;&lt;li&gt;&lt;span style="font-weight: bolder;"&gt;4) Assurance &amp; Trust&lt;/span&gt;: Consistently delivering on promises and providing reliable service.&lt;/li&gt;&lt;/ul&gt;</textarea><div class="note-editor note-frame card"><div class="note-dropzone"><div class="note-dropzone-message"></div></div><div class="note-toolbar card-header" role="toolbar"><div class="note-btn-group btn-group note-style"><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-light btn-sm dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" aria-label="Style" data-original-title="Style"><i class="note-icon-magic"></i></button><div class="note-dropdown-menu dropdown-menu dropdown-style" role="list" aria-label="Style"><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="p" role="listitem" aria-label="p"><p>Normal</p></a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="blockquote" role="listitem" aria-label="blockquote"><blockquote class="blockquote">Blockquote</blockquote></a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="pre" role="listitem" aria-label="pre"><pre>Code</pre></a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="h1" role="listitem" aria-label="h1"><h1>Header 1</h1></a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="h2" role="listitem" aria-label="h2"><h2>Header 2</h2></a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="h3" role="listitem" aria-label="h3"><h3>Header 3</h3></a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="h4" role="listitem" aria-label="h4"><h4>Header 4</h4></a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="h5" role="listitem" aria-label="h5"><h5>Header 5</h5></a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="h6" role="listitem" aria-label="h6"><h6>Header 6</h6></a></div></div></div><div class="note-btn-group btn-group note-font"><button type="button" class="note-btn btn btn-light btn-sm note-btn-bold" tabindex="-1" title="" aria-label="Bold (CTRL+B)" data-original-title="Bold (CTRL+B)"><i class="note-icon-bold"></i></button><button type="button" class="note-btn btn btn-light btn-sm note-btn-italic" tabindex="-1" title="" aria-label="Italic (CTRL+I)" data-original-title="Italic (CTRL+I)"><i class="note-icon-italic"></i></button><button type="button" class="note-btn btn btn-light btn-sm note-btn-underline" tabindex="-1" title="" aria-label="Underline (CTRL+U)" data-original-title="Underline (CTRL+U)"><i class="note-icon-underline"></i></button><button type="button" class="note-btn btn btn-light btn-sm note-btn-strikethrough" tabindex="-1" title="" aria-label="Strikethrough (CTRL+SHIFT+S)" data-original-title="Strikethrough (CTRL+SHIFT+S)"><i class="note-icon-strikethrough"></i></button><button type="button" class="note-btn btn btn-light btn-sm note-btn-superscript" tabindex="-1" title="" aria-label="Superscript" data-original-title="Superscript"><i class="note-icon-superscript"></i></button><button type="button" class="note-btn btn btn-light btn-sm note-btn-subscript" tabindex="-1" title="" aria-label="Subscript" data-original-title="Subscript"><i class="note-icon-subscript"></i></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Remove Font Style (CTRL+\)" data-original-title="Remove Font Style (CTRL+\)"><i class="note-icon-eraser"></i></button></div><div class="note-btn-group btn-group note-fontname"><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-light btn-sm dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" aria-label="Font Family" data-original-title="Font Family"><span class="note-current-fontname" style="font-family: &quot;Segoe UI&quot;;">Segoe UI</span></button><div class="note-dropdown-menu dropdown-menu note-check dropdown-fontname" role="list" aria-label="Font Family"><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="Arial" role="listitem" aria-label="Arial"><i class="note-icon-menu-check"></i> <span style="font-family: &#39;Arial&#39;">Arial</span></a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="Arial Black" role="listitem" aria-label="Arial Black"><i class="note-icon-menu-check"></i> <span style="font-family: &#39;Arial Black&#39;">Arial Black</span></a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="Comic Sans MS" role="listitem" aria-label="Comic Sans MS"><i class="note-icon-menu-check"></i> <span style="font-family: &#39;Comic Sans MS&#39;">Comic Sans MS</span></a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="Courier New" role="listitem" aria-label="Courier New"><i class="note-icon-menu-check"></i> <span style="font-family: &#39;Courier New&#39;">Courier New</span></a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="Helvetica" role="listitem" aria-label="Helvetica"><i class="note-icon-menu-check"></i> <span style="font-family: &#39;Helvetica&#39;">Helvetica</span></a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="Impact" role="listitem" aria-label="Impact"><i class="note-icon-menu-check"></i> <span style="font-family: &#39;Impact&#39;">Impact</span></a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="Tahoma" role="listitem" aria-label="Tahoma"><i class="note-icon-menu-check"></i> <span style="font-family: &#39;Tahoma&#39;">Tahoma</span></a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="Times New Roman" role="listitem" aria-label="Times New Roman"><i class="note-icon-menu-check"></i> <span style="font-family: &#39;Times New Roman&#39;">Times New Roman</span></a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="Verdana" role="listitem" aria-label="Verdana"><i class="note-icon-menu-check"></i> <span style="font-family: &#39;Verdana&#39;">Verdana</span></a><a class="dropdown-item checked" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="Segoe UI" role="listitem" aria-label="Segoe UI"><i class="note-icon-menu-check"></i> <span style="font-family: &#39;Segoe UI&#39;">Segoe UI</span></a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="Segoe UI Emoji" role="listitem" aria-label="Segoe UI Emoji"><i class="note-icon-menu-check"></i> <span style="font-family: &#39;Segoe UI Emoji&#39;">Segoe UI Emoji</span></a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="Segoe UI Symbol" role="listitem" aria-label="Segoe UI Symbol"><i class="note-icon-menu-check"></i> <span style="font-family: &#39;Segoe UI Symbol&#39;">Segoe UI Symbol</span></a></div></div></div><div class="note-btn-group btn-group note-fontsize"><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-light btn-sm dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" aria-label="Font Size" data-original-title="Font Size"><span class="note-current-fontsize">16</span></button><div class="note-dropdown-menu dropdown-menu note-check dropdown-fontsize" role="list" aria-label="Font Size"><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="8" role="listitem" aria-label="8"><i class="note-icon-menu-check"></i> 8</a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="9" role="listitem" aria-label="9"><i class="note-icon-menu-check"></i> 9</a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="10" role="listitem" aria-label="10"><i class="note-icon-menu-check"></i> 10</a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="11" role="listitem" aria-label="11"><i class="note-icon-menu-check"></i> 11</a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="12" role="listitem" aria-label="12"><i class="note-icon-menu-check"></i> 12</a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="14" role="listitem" aria-label="14"><i class="note-icon-menu-check"></i> 14</a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="18" role="listitem" aria-label="18"><i class="note-icon-menu-check"></i> 18</a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="24" role="listitem" aria-label="24"><i class="note-icon-menu-check"></i> 24</a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="36" role="listitem" aria-label="36"><i class="note-icon-menu-check"></i> 36</a></div></div></div><div class="note-btn-group btn-group note-color"><div class="note-btn-group btn-group note-color note-color-all"><button type="button" class="note-btn btn btn-light btn-sm note-current-color-button" tabindex="-1" title="" aria-label="Recent Color" data-original-title="Recent Color" data-backcolor="#FFFF00" data-forecolor="#000000"><i class="note-icon-font note-recent-color" style="background-color: rgb(255, 255, 0); color: rgb(0, 0, 0);"></i></button><button type="button" class="note-btn btn btn-light btn-sm dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" aria-label="More Color" data-original-title="More Color"></button><div class="note-dropdown-menu dropdown-menu" role="list"><div class="note-palette"><div class="note-palette-title">Background Color</div><div><button type="button" class="note-color-reset btn btn-light btn-default" data-event="backColor" data-value="transparent">Transparent</button></div><div class="note-holder" data-event="backColor"><!-- back colors --><div class="note-color-palette"><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#000000" data-event="backColor" data-value="#000000" title="" aria-label="Black" data-toggle="button" tabindex="-1" data-original-title="Black"></button><button type="button" class="note-color-btn" style="background-color:#424242" data-event="backColor" data-value="#424242" title="" aria-label="Tundora" data-toggle="button" tabindex="-1" data-original-title="Tundora"></button><button type="button" class="note-color-btn" style="background-color:#636363" data-event="backColor" data-value="#636363" title="" aria-label="Dove Gray" data-toggle="button" tabindex="-1" data-original-title="Dove Gray"></button><button type="button" class="note-color-btn" style="background-color:#9C9C94" data-event="backColor" data-value="#9C9C94" title="" aria-label="Star Dust" data-toggle="button" tabindex="-1" data-original-title="Star Dust"></button><button type="button" class="note-color-btn" style="background-color:#CEC6CE" data-event="backColor" data-value="#CEC6CE" title="" aria-label="Pale Slate" data-toggle="button" tabindex="-1" data-original-title="Pale Slate"></button><button type="button" class="note-color-btn" style="background-color:#EFEFEF" data-event="backColor" data-value="#EFEFEF" title="" aria-label="Gallery" data-toggle="button" tabindex="-1" data-original-title="Gallery"></button><button type="button" class="note-color-btn" style="background-color:#F7F7F7" data-event="backColor" data-value="#F7F7F7" title="" aria-label="Alabaster" data-toggle="button" tabindex="-1" data-original-title="Alabaster"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="backColor" data-value="#FFFFFF" title="" aria-label="White" data-toggle="button" tabindex="-1" data-original-title="White"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#FF0000" data-event="backColor" data-value="#FF0000" title="" aria-label="Red" data-toggle="button" tabindex="-1" data-original-title="Red"></button><button type="button" class="note-color-btn" style="background-color:#FF9C00" data-event="backColor" data-value="#FF9C00" title="" aria-label="Orange Peel" data-toggle="button" tabindex="-1" data-original-title="Orange Peel"></button><button type="button" class="note-color-btn" style="background-color:#FFFF00" data-event="backColor" data-value="#FFFF00" title="" aria-label="Yellow" data-toggle="button" tabindex="-1" data-original-title="Yellow"></button><button type="button" class="note-color-btn" style="background-color:#00FF00" data-event="backColor" data-value="#00FF00" title="" aria-label="Green" data-toggle="button" tabindex="-1" data-original-title="Green"></button><button type="button" class="note-color-btn" style="background-color:#00FFFF" data-event="backColor" data-value="#00FFFF" title="" aria-label="Cyan" data-toggle="button" tabindex="-1" data-original-title="Cyan"></button><button type="button" class="note-color-btn" style="background-color:#0000FF" data-event="backColor" data-value="#0000FF" title="" aria-label="Blue" data-toggle="button" tabindex="-1" data-original-title="Blue"></button><button type="button" class="note-color-btn" style="background-color:#9C00FF" data-event="backColor" data-value="#9C00FF" title="" aria-label="Electric Violet" data-toggle="button" tabindex="-1" data-original-title="Electric Violet"></button><button type="button" class="note-color-btn" style="background-color:#FF00FF" data-event="backColor" data-value="#FF00FF" title="" aria-label="Magenta" data-toggle="button" tabindex="-1" data-original-title="Magenta"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#F7C6CE" data-event="backColor" data-value="#F7C6CE" title="" aria-label="Azalea" data-toggle="button" tabindex="-1" data-original-title="Azalea"></button><button type="button" class="note-color-btn" style="background-color:#FFE7CE" data-event="backColor" data-value="#FFE7CE" title="" aria-label="Karry" data-toggle="button" tabindex="-1" data-original-title="Karry"></button><button type="button" class="note-color-btn" style="background-color:#FFEFC6" data-event="backColor" data-value="#FFEFC6" title="" aria-label="Egg White" data-toggle="button" tabindex="-1" data-original-title="Egg White"></button><button type="button" class="note-color-btn" style="background-color:#D6EFD6" data-event="backColor" data-value="#D6EFD6" title="" aria-label="Zanah" data-toggle="button" tabindex="-1" data-original-title="Zanah"></button><button type="button" class="note-color-btn" style="background-color:#CEDEE7" data-event="backColor" data-value="#CEDEE7" title="" aria-label="Botticelli" data-toggle="button" tabindex="-1" data-original-title="Botticelli"></button><button type="button" class="note-color-btn" style="background-color:#CEE7F7" data-event="backColor" data-value="#CEE7F7" title="" aria-label="Tropical Blue" data-toggle="button" tabindex="-1" data-original-title="Tropical Blue"></button><button type="button" class="note-color-btn" style="background-color:#D6D6E7" data-event="backColor" data-value="#D6D6E7" title="" aria-label="Mischka" data-toggle="button" tabindex="-1" data-original-title="Mischka"></button><button type="button" class="note-color-btn" style="background-color:#E7D6DE" data-event="backColor" data-value="#E7D6DE" title="" aria-label="Twilight" data-toggle="button" tabindex="-1" data-original-title="Twilight"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#E79C9C" data-event="backColor" data-value="#E79C9C" title="" aria-label="Tonys Pink" data-toggle="button" tabindex="-1" data-original-title="Tonys Pink"></button><button type="button" class="note-color-btn" style="background-color:#FFC69C" data-event="backColor" data-value="#FFC69C" title="" aria-label="Peach Orange" data-toggle="button" tabindex="-1" data-original-title="Peach Orange"></button><button type="button" class="note-color-btn" style="background-color:#FFE79C" data-event="backColor" data-value="#FFE79C" title="" aria-label="Cream Brulee" data-toggle="button" tabindex="-1" data-original-title="Cream Brulee"></button><button type="button" class="note-color-btn" style="background-color:#B5D6A5" data-event="backColor" data-value="#B5D6A5" title="" aria-label="Sprout" data-toggle="button" tabindex="-1" data-original-title="Sprout"></button><button type="button" class="note-color-btn" style="background-color:#A5C6CE" data-event="backColor" data-value="#A5C6CE" title="" aria-label="Casper" data-toggle="button" tabindex="-1" data-original-title="Casper"></button><button type="button" class="note-color-btn" style="background-color:#9CC6EF" data-event="backColor" data-value="#9CC6EF" title="" aria-label="Perano" data-toggle="button" tabindex="-1" data-original-title="Perano"></button><button type="button" class="note-color-btn" style="background-color:#B5A5D6" data-event="backColor" data-value="#B5A5D6" title="" aria-label="Cold Purple" data-toggle="button" tabindex="-1" data-original-title="Cold Purple"></button><button type="button" class="note-color-btn" style="background-color:#D6A5BD" data-event="backColor" data-value="#D6A5BD" title="" aria-label="Careys Pink" data-toggle="button" tabindex="-1" data-original-title="Careys Pink"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#E76363" data-event="backColor" data-value="#E76363" title="" aria-label="Mandy" data-toggle="button" tabindex="-1" data-original-title="Mandy"></button><button type="button" class="note-color-btn" style="background-color:#F7AD6B" data-event="backColor" data-value="#F7AD6B" title="" aria-label="Rajah" data-toggle="button" tabindex="-1" data-original-title="Rajah"></button><button type="button" class="note-color-btn" style="background-color:#FFD663" data-event="backColor" data-value="#FFD663" title="" aria-label="Dandelion" data-toggle="button" tabindex="-1" data-original-title="Dandelion"></button><button type="button" class="note-color-btn" style="background-color:#94BD7B" data-event="backColor" data-value="#94BD7B" title="" aria-label="Olivine" data-toggle="button" tabindex="-1" data-original-title="Olivine"></button><button type="button" class="note-color-btn" style="background-color:#73A5AD" data-event="backColor" data-value="#73A5AD" title="" aria-label="Gulf Stream" data-toggle="button" tabindex="-1" data-original-title="Gulf Stream"></button><button type="button" class="note-color-btn" style="background-color:#6BADDE" data-event="backColor" data-value="#6BADDE" title="" aria-label="Viking" data-toggle="button" tabindex="-1" data-original-title="Viking"></button><button type="button" class="note-color-btn" style="background-color:#8C7BC6" data-event="backColor" data-value="#8C7BC6" title="" aria-label="Blue Marguerite" data-toggle="button" tabindex="-1" data-original-title="Blue Marguerite"></button><button type="button" class="note-color-btn" style="background-color:#C67BA5" data-event="backColor" data-value="#C67BA5" title="" aria-label="Puce" data-toggle="button" tabindex="-1" data-original-title="Puce"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#CE0000" data-event="backColor" data-value="#CE0000" title="" aria-label="Guardsman Red" data-toggle="button" tabindex="-1" data-original-title="Guardsman Red"></button><button type="button" class="note-color-btn" style="background-color:#E79439" data-event="backColor" data-value="#E79439" title="" aria-label="Fire Bush" data-toggle="button" tabindex="-1" data-original-title="Fire Bush"></button><button type="button" class="note-color-btn" style="background-color:#EFC631" data-event="backColor" data-value="#EFC631" title="" aria-label="Golden Dream" data-toggle="button" tabindex="-1" data-original-title="Golden Dream"></button><button type="button" class="note-color-btn" style="background-color:#6BA54A" data-event="backColor" data-value="#6BA54A" title="" aria-label="Chelsea Cucumber" data-toggle="button" tabindex="-1" data-original-title="Chelsea Cucumber"></button><button type="button" class="note-color-btn" style="background-color:#4A7B8C" data-event="backColor" data-value="#4A7B8C" title="" aria-label="Smalt Blue" data-toggle="button" tabindex="-1" data-original-title="Smalt Blue"></button><button type="button" class="note-color-btn" style="background-color:#3984C6" data-event="backColor" data-value="#3984C6" title="" aria-label="Boston Blue" data-toggle="button" tabindex="-1" data-original-title="Boston Blue"></button><button type="button" class="note-color-btn" style="background-color:#634AA5" data-event="backColor" data-value="#634AA5" title="" aria-label="Butterfly Bush" data-toggle="button" tabindex="-1" data-original-title="Butterfly Bush"></button><button type="button" class="note-color-btn" style="background-color:#A54A7B" data-event="backColor" data-value="#A54A7B" title="" aria-label="Cadillac" data-toggle="button" tabindex="-1" data-original-title="Cadillac"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#9C0000" data-event="backColor" data-value="#9C0000" title="" aria-label="Sangria" data-toggle="button" tabindex="-1" data-original-title="Sangria"></button><button type="button" class="note-color-btn" style="background-color:#B56308" data-event="backColor" data-value="#B56308" title="" aria-label="Mai Tai" data-toggle="button" tabindex="-1" data-original-title="Mai Tai"></button><button type="button" class="note-color-btn" style="background-color:#BD9400" data-event="backColor" data-value="#BD9400" title="" aria-label="Buddha Gold" data-toggle="button" tabindex="-1" data-original-title="Buddha Gold"></button><button type="button" class="note-color-btn" style="background-color:#397B21" data-event="backColor" data-value="#397B21" title="" aria-label="Forest Green" data-toggle="button" tabindex="-1" data-original-title="Forest Green"></button><button type="button" class="note-color-btn" style="background-color:#104A5A" data-event="backColor" data-value="#104A5A" title="" aria-label="Eden" data-toggle="button" tabindex="-1" data-original-title="Eden"></button><button type="button" class="note-color-btn" style="background-color:#085294" data-event="backColor" data-value="#085294" title="" aria-label="Venice Blue" data-toggle="button" tabindex="-1" data-original-title="Venice Blue"></button><button type="button" class="note-color-btn" style="background-color:#311873" data-event="backColor" data-value="#311873" title="" aria-label="Meteorite" data-toggle="button" tabindex="-1" data-original-title="Meteorite"></button><button type="button" class="note-color-btn" style="background-color:#731842" data-event="backColor" data-value="#731842" title="" aria-label="Claret" data-toggle="button" tabindex="-1" data-original-title="Claret"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#630000" data-event="backColor" data-value="#630000" title="" aria-label="Rosewood" data-toggle="button" tabindex="-1" data-original-title="Rosewood"></button><button type="button" class="note-color-btn" style="background-color:#7B3900" data-event="backColor" data-value="#7B3900" title="" aria-label="Cinnamon" data-toggle="button" tabindex="-1" data-original-title="Cinnamon"></button><button type="button" class="note-color-btn" style="background-color:#846300" data-event="backColor" data-value="#846300" title="" aria-label="Olive" data-toggle="button" tabindex="-1" data-original-title="Olive"></button><button type="button" class="note-color-btn" style="background-color:#295218" data-event="backColor" data-value="#295218" title="" aria-label="Parsley" data-toggle="button" tabindex="-1" data-original-title="Parsley"></button><button type="button" class="note-color-btn" style="background-color:#083139" data-event="backColor" data-value="#083139" title="" aria-label="Tiber" data-toggle="button" tabindex="-1" data-original-title="Tiber"></button><button type="button" class="note-color-btn" style="background-color:#003163" data-event="backColor" data-value="#003163" title="" aria-label="Midnight Blue" data-toggle="button" tabindex="-1" data-original-title="Midnight Blue"></button><button type="button" class="note-color-btn" style="background-color:#21104A" data-event="backColor" data-value="#21104A" title="" aria-label="Valentino" data-toggle="button" tabindex="-1" data-original-title="Valentino"></button><button type="button" class="note-color-btn" style="background-color:#4A1031" data-event="backColor" data-value="#4A1031" title="" aria-label="Loulou" data-toggle="button" tabindex="-1" data-original-title="Loulou"></button></div></div></div><div><button type="button" class="note-color-select btn btn-light btn-default" data-event="openPalette" data-value="backColorPicker">Select</button><input type="color" id="backColorPicker" class="note-btn note-color-select-btn" value="#FFFF00" data-event="backColorPalette"></div><div class="note-holder-custom" id="backColorPalette" data-event="backColor"><div class="note-color-palette"><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="backColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="backColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="backColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="backColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="backColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="backColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="backColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="backColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button></div></div></div></div><div class="note-palette"><div class="note-palette-title">Text Color</div><div><button type="button" class="note-color-reset btn btn-light btn-default" data-event="removeFormat" data-value="foreColor">Reset to default</button></div><div class="note-holder" data-event="foreColor"><!-- fore colors --><div class="note-color-palette"><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#000000" data-event="foreColor" data-value="#000000" title="" aria-label="Black" data-toggle="button" tabindex="-1" data-original-title="Black"></button><button type="button" class="note-color-btn" style="background-color:#424242" data-event="foreColor" data-value="#424242" title="" aria-label="Tundora" data-toggle="button" tabindex="-1" data-original-title="Tundora"></button><button type="button" class="note-color-btn" style="background-color:#636363" data-event="foreColor" data-value="#636363" title="" aria-label="Dove Gray" data-toggle="button" tabindex="-1" data-original-title="Dove Gray"></button><button type="button" class="note-color-btn" style="background-color:#9C9C94" data-event="foreColor" data-value="#9C9C94" title="" aria-label="Star Dust" data-toggle="button" tabindex="-1" data-original-title="Star Dust"></button><button type="button" class="note-color-btn" style="background-color:#CEC6CE" data-event="foreColor" data-value="#CEC6CE" title="" aria-label="Pale Slate" data-toggle="button" tabindex="-1" data-original-title="Pale Slate"></button><button type="button" class="note-color-btn" style="background-color:#EFEFEF" data-event="foreColor" data-value="#EFEFEF" title="" aria-label="Gallery" data-toggle="button" tabindex="-1" data-original-title="Gallery"></button><button type="button" class="note-color-btn" style="background-color:#F7F7F7" data-event="foreColor" data-value="#F7F7F7" title="" aria-label="Alabaster" data-toggle="button" tabindex="-1" data-original-title="Alabaster"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="foreColor" data-value="#FFFFFF" title="" aria-label="White" data-toggle="button" tabindex="-1" data-original-title="White"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#FF0000" data-event="foreColor" data-value="#FF0000" title="" aria-label="Red" data-toggle="button" tabindex="-1" data-original-title="Red"></button><button type="button" class="note-color-btn" style="background-color:#FF9C00" data-event="foreColor" data-value="#FF9C00" title="" aria-label="Orange Peel" data-toggle="button" tabindex="-1" data-original-title="Orange Peel"></button><button type="button" class="note-color-btn" style="background-color:#FFFF00" data-event="foreColor" data-value="#FFFF00" title="" aria-label="Yellow" data-toggle="button" tabindex="-1" data-original-title="Yellow"></button><button type="button" class="note-color-btn" style="background-color:#00FF00" data-event="foreColor" data-value="#00FF00" title="" aria-label="Green" data-toggle="button" tabindex="-1" data-original-title="Green"></button><button type="button" class="note-color-btn" style="background-color:#00FFFF" data-event="foreColor" data-value="#00FFFF" title="" aria-label="Cyan" data-toggle="button" tabindex="-1" data-original-title="Cyan"></button><button type="button" class="note-color-btn" style="background-color:#0000FF" data-event="foreColor" data-value="#0000FF" title="" aria-label="Blue" data-toggle="button" tabindex="-1" data-original-title="Blue"></button><button type="button" class="note-color-btn" style="background-color:#9C00FF" data-event="foreColor" data-value="#9C00FF" title="" aria-label="Electric Violet" data-toggle="button" tabindex="-1" data-original-title="Electric Violet"></button><button type="button" class="note-color-btn" style="background-color:#FF00FF" data-event="foreColor" data-value="#FF00FF" title="" aria-label="Magenta" data-toggle="button" tabindex="-1" data-original-title="Magenta"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#F7C6CE" data-event="foreColor" data-value="#F7C6CE" title="" aria-label="Azalea" data-toggle="button" tabindex="-1" data-original-title="Azalea"></button><button type="button" class="note-color-btn" style="background-color:#FFE7CE" data-event="foreColor" data-value="#FFE7CE" title="" aria-label="Karry" data-toggle="button" tabindex="-1" data-original-title="Karry"></button><button type="button" class="note-color-btn" style="background-color:#FFEFC6" data-event="foreColor" data-value="#FFEFC6" title="" aria-label="Egg White" data-toggle="button" tabindex="-1" data-original-title="Egg White"></button><button type="button" class="note-color-btn" style="background-color:#D6EFD6" data-event="foreColor" data-value="#D6EFD6" title="" aria-label="Zanah" data-toggle="button" tabindex="-1" data-original-title="Zanah"></button><button type="button" class="note-color-btn" style="background-color:#CEDEE7" data-event="foreColor" data-value="#CEDEE7" title="" aria-label="Botticelli" data-toggle="button" tabindex="-1" data-original-title="Botticelli"></button><button type="button" class="note-color-btn" style="background-color:#CEE7F7" data-event="foreColor" data-value="#CEE7F7" title="" aria-label="Tropical Blue" data-toggle="button" tabindex="-1" data-original-title="Tropical Blue"></button><button type="button" class="note-color-btn" style="background-color:#D6D6E7" data-event="foreColor" data-value="#D6D6E7" title="" aria-label="Mischka" data-toggle="button" tabindex="-1" data-original-title="Mischka"></button><button type="button" class="note-color-btn" style="background-color:#E7D6DE" data-event="foreColor" data-value="#E7D6DE" title="" aria-label="Twilight" data-toggle="button" tabindex="-1" data-original-title="Twilight"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#E79C9C" data-event="foreColor" data-value="#E79C9C" title="" aria-label="Tonys Pink" data-toggle="button" tabindex="-1" data-original-title="Tonys Pink"></button><button type="button" class="note-color-btn" style="background-color:#FFC69C" data-event="foreColor" data-value="#FFC69C" title="" aria-label="Peach Orange" data-toggle="button" tabindex="-1" data-original-title="Peach Orange"></button><button type="button" class="note-color-btn" style="background-color:#FFE79C" data-event="foreColor" data-value="#FFE79C" title="" aria-label="Cream Brulee" data-toggle="button" tabindex="-1" data-original-title="Cream Brulee"></button><button type="button" class="note-color-btn" style="background-color:#B5D6A5" data-event="foreColor" data-value="#B5D6A5" title="" aria-label="Sprout" data-toggle="button" tabindex="-1" data-original-title="Sprout"></button><button type="button" class="note-color-btn" style="background-color:#A5C6CE" data-event="foreColor" data-value="#A5C6CE" title="" aria-label="Casper" data-toggle="button" tabindex="-1" data-original-title="Casper"></button><button type="button" class="note-color-btn" style="background-color:#9CC6EF" data-event="foreColor" data-value="#9CC6EF" title="" aria-label="Perano" data-toggle="button" tabindex="-1" data-original-title="Perano"></button><button type="button" class="note-color-btn" style="background-color:#B5A5D6" data-event="foreColor" data-value="#B5A5D6" title="" aria-label="Cold Purple" data-toggle="button" tabindex="-1" data-original-title="Cold Purple"></button><button type="button" class="note-color-btn" style="background-color:#D6A5BD" data-event="foreColor" data-value="#D6A5BD" title="" aria-label="Careys Pink" data-toggle="button" tabindex="-1" data-original-title="Careys Pink"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#E76363" data-event="foreColor" data-value="#E76363" title="" aria-label="Mandy" data-toggle="button" tabindex="-1" data-original-title="Mandy"></button><button type="button" class="note-color-btn" style="background-color:#F7AD6B" data-event="foreColor" data-value="#F7AD6B" title="" aria-label="Rajah" data-toggle="button" tabindex="-1" data-original-title="Rajah"></button><button type="button" class="note-color-btn" style="background-color:#FFD663" data-event="foreColor" data-value="#FFD663" title="" aria-label="Dandelion" data-toggle="button" tabindex="-1" data-original-title="Dandelion"></button><button type="button" class="note-color-btn" style="background-color:#94BD7B" data-event="foreColor" data-value="#94BD7B" title="" aria-label="Olivine" data-toggle="button" tabindex="-1" data-original-title="Olivine"></button><button type="button" class="note-color-btn" style="background-color:#73A5AD" data-event="foreColor" data-value="#73A5AD" title="" aria-label="Gulf Stream" data-toggle="button" tabindex="-1" data-original-title="Gulf Stream"></button><button type="button" class="note-color-btn" style="background-color:#6BADDE" data-event="foreColor" data-value="#6BADDE" title="" aria-label="Viking" data-toggle="button" tabindex="-1" data-original-title="Viking"></button><button type="button" class="note-color-btn" style="background-color:#8C7BC6" data-event="foreColor" data-value="#8C7BC6" title="" aria-label="Blue Marguerite" data-toggle="button" tabindex="-1" data-original-title="Blue Marguerite"></button><button type="button" class="note-color-btn" style="background-color:#C67BA5" data-event="foreColor" data-value="#C67BA5" title="" aria-label="Puce" data-toggle="button" tabindex="-1" data-original-title="Puce"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#CE0000" data-event="foreColor" data-value="#CE0000" title="" aria-label="Guardsman Red" data-toggle="button" tabindex="-1" data-original-title="Guardsman Red"></button><button type="button" class="note-color-btn" style="background-color:#E79439" data-event="foreColor" data-value="#E79439" title="" aria-label="Fire Bush" data-toggle="button" tabindex="-1" data-original-title="Fire Bush"></button><button type="button" class="note-color-btn" style="background-color:#EFC631" data-event="foreColor" data-value="#EFC631" title="" aria-label="Golden Dream" data-toggle="button" tabindex="-1" data-original-title="Golden Dream"></button><button type="button" class="note-color-btn" style="background-color:#6BA54A" data-event="foreColor" data-value="#6BA54A" title="" aria-label="Chelsea Cucumber" data-toggle="button" tabindex="-1" data-original-title="Chelsea Cucumber"></button><button type="button" class="note-color-btn" style="background-color:#4A7B8C" data-event="foreColor" data-value="#4A7B8C" title="" aria-label="Smalt Blue" data-toggle="button" tabindex="-1" data-original-title="Smalt Blue"></button><button type="button" class="note-color-btn" style="background-color:#3984C6" data-event="foreColor" data-value="#3984C6" title="" aria-label="Boston Blue" data-toggle="button" tabindex="-1" data-original-title="Boston Blue"></button><button type="button" class="note-color-btn" style="background-color:#634AA5" data-event="foreColor" data-value="#634AA5" title="" aria-label="Butterfly Bush" data-toggle="button" tabindex="-1" data-original-title="Butterfly Bush"></button><button type="button" class="note-color-btn" style="background-color:#A54A7B" data-event="foreColor" data-value="#A54A7B" title="" aria-label="Cadillac" data-toggle="button" tabindex="-1" data-original-title="Cadillac"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#9C0000" data-event="foreColor" data-value="#9C0000" title="" aria-label="Sangria" data-toggle="button" tabindex="-1" data-original-title="Sangria"></button><button type="button" class="note-color-btn" style="background-color:#B56308" data-event="foreColor" data-value="#B56308" title="" aria-label="Mai Tai" data-toggle="button" tabindex="-1" data-original-title="Mai Tai"></button><button type="button" class="note-color-btn" style="background-color:#BD9400" data-event="foreColor" data-value="#BD9400" title="" aria-label="Buddha Gold" data-toggle="button" tabindex="-1" data-original-title="Buddha Gold"></button><button type="button" class="note-color-btn" style="background-color:#397B21" data-event="foreColor" data-value="#397B21" title="" aria-label="Forest Green" data-toggle="button" tabindex="-1" data-original-title="Forest Green"></button><button type="button" class="note-color-btn" style="background-color:#104A5A" data-event="foreColor" data-value="#104A5A" title="" aria-label="Eden" data-toggle="button" tabindex="-1" data-original-title="Eden"></button><button type="button" class="note-color-btn" style="background-color:#085294" data-event="foreColor" data-value="#085294" title="" aria-label="Venice Blue" data-toggle="button" tabindex="-1" data-original-title="Venice Blue"></button><button type="button" class="note-color-btn" style="background-color:#311873" data-event="foreColor" data-value="#311873" title="" aria-label="Meteorite" data-toggle="button" tabindex="-1" data-original-title="Meteorite"></button><button type="button" class="note-color-btn" style="background-color:#731842" data-event="foreColor" data-value="#731842" title="" aria-label="Claret" data-toggle="button" tabindex="-1" data-original-title="Claret"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#630000" data-event="foreColor" data-value="#630000" title="" aria-label="Rosewood" data-toggle="button" tabindex="-1" data-original-title="Rosewood"></button><button type="button" class="note-color-btn" style="background-color:#7B3900" data-event="foreColor" data-value="#7B3900" title="" aria-label="Cinnamon" data-toggle="button" tabindex="-1" data-original-title="Cinnamon"></button><button type="button" class="note-color-btn" style="background-color:#846300" data-event="foreColor" data-value="#846300" title="" aria-label="Olive" data-toggle="button" tabindex="-1" data-original-title="Olive"></button><button type="button" class="note-color-btn" style="background-color:#295218" data-event="foreColor" data-value="#295218" title="" aria-label="Parsley" data-toggle="button" tabindex="-1" data-original-title="Parsley"></button><button type="button" class="note-color-btn" style="background-color:#083139" data-event="foreColor" data-value="#083139" title="" aria-label="Tiber" data-toggle="button" tabindex="-1" data-original-title="Tiber"></button><button type="button" class="note-color-btn" style="background-color:#003163" data-event="foreColor" data-value="#003163" title="" aria-label="Midnight Blue" data-toggle="button" tabindex="-1" data-original-title="Midnight Blue"></button><button type="button" class="note-color-btn" style="background-color:#21104A" data-event="foreColor" data-value="#21104A" title="" aria-label="Valentino" data-toggle="button" tabindex="-1" data-original-title="Valentino"></button><button type="button" class="note-color-btn" style="background-color:#4A1031" data-event="foreColor" data-value="#4A1031" title="" aria-label="Loulou" data-toggle="button" tabindex="-1" data-original-title="Loulou"></button></div></div></div><div><button type="button" class="note-color-select btn btn-light btn-default" data-event="openPalette" data-value="foreColorPicker">Select</button><input type="color" id="foreColorPicker" class="note-btn note-color-select-btn" value="#000000" data-event="foreColorPalette"></div><div class="note-holder-custom" id="foreColorPalette" data-event="foreColor"><div class="note-color-palette"><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="foreColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="foreColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="foreColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="foreColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="foreColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="foreColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="foreColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="foreColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button></div></div></div></div></div></div></div><div class="note-btn-group btn-group note-para"><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Ordered list (CTRL+SHIFT+NUM8)" data-original-title="Ordered list (CTRL+SHIFT+NUM8)"><i class="note-icon-orderedlist"></i></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Unordered list (CTRL+SHIFT+NUM7)" data-original-title="Unordered list (CTRL+SHIFT+NUM7)"><i class="note-icon-unorderedlist"></i></button><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-light btn-sm dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" aria-label="Paragraph" data-original-title="Paragraph"><i class="note-icon-align-left"></i></button><div class="note-dropdown-menu dropdown-menu" role="list"><div class="note-btn-group btn-group note-align"><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Align left (CTRL+SHIFT+L)" data-original-title="Align left (CTRL+SHIFT+L)"><i class="note-icon-align-left"></i></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Align center (CTRL+SHIFT+E)" data-original-title="Align center (CTRL+SHIFT+E)"><i class="note-icon-align-center"></i></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Align right (CTRL+SHIFT+R)" data-original-title="Align right (CTRL+SHIFT+R)"><i class="note-icon-align-right"></i></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Justify full (CTRL+SHIFT+J)" data-original-title="Justify full (CTRL+SHIFT+J)"><i class="note-icon-align-justify"></i></button></div><div class="note-btn-group btn-group note-list"><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Outdent (CTRL+[)" data-original-title="Outdent (CTRL+[)"><i class="note-icon-align-outdent"></i></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Indent (CTRL+])" data-original-title="Indent (CTRL+])"><i class="note-icon-align-indent"></i></button></div></div></div><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-light btn-sm dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" aria-label="Line Height" data-original-title="Line Height"><i class="note-icon-text-height"></i></button><div class="note-dropdown-menu dropdown-menu note-check dropdown-line-height" role="list" aria-label="Line Height"><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="1.0" role="listitem" aria-label="1.0"><i class="note-icon-menu-check"></i> 1.0</a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="1.2" role="listitem" aria-label="1.2"><i class="note-icon-menu-check"></i> 1.2</a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="1.4" role="listitem" aria-label="1.4"><i class="note-icon-menu-check"></i> 1.4</a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="1.5" role="listitem" aria-label="1.5"><i class="note-icon-menu-check"></i> 1.5</a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="1.6" role="listitem" aria-label="1.6"><i class="note-icon-menu-check"></i> 1.6</a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="1.8" role="listitem" aria-label="1.8"><i class="note-icon-menu-check"></i> 1.8</a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="2.0" role="listitem" aria-label="2.0"><i class="note-icon-menu-check"></i> 2.0</a><a class="dropdown-item" href="http://localhost/vehicle_service/admin/?page=system_info#" data-value="3.0" role="listitem" aria-label="3.0"><i class="note-icon-menu-check"></i> 3.0</a></div></div></div><div class="note-btn-group btn-group note-table"><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-light btn-sm dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" aria-label="Table" data-original-title="Table"><i class="note-icon-table"></i></button><div class="note-dropdown-menu dropdown-menu note-table" role="list" aria-label="Table"><div class="note-dimension-picker"><div class="note-dimension-picker-mousecatcher" data-event="insertTable" data-value="1x1" style="width: 10em; height: 10em;"></div><div class="note-dimension-picker-highlighted"></div><div class="note-dimension-picker-unhighlighted"></div></div><div class="note-dimension-display">1 x 1</div></div></div></div><div class="note-btn-group btn-group note-view"><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Undo (CTRL+Z)" data-original-title="Undo (CTRL+Z)"><i class="note-icon-undo"></i></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Redo (CTRL+Y)" data-original-title="Redo (CTRL+Y)"><i class="note-icon-redo"></i></button><button type="button" class="note-btn btn btn-light btn-sm btn-fullscreen note-codeview-keep" tabindex="-1" title="" aria-label="Full Screen" data-original-title="Full Screen"><i class="note-icon-arrows-alt"></i></button><button type="button" class="note-btn btn btn-light btn-sm btn-codeview note-codeview-keep" tabindex="-1" title="" aria-label="Code View" data-original-title="Code View"><i class="note-icon-code"></i></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Help" data-original-title="Help"><i class="note-icon-question"></i></button></div></div><div class="note-editing-area"><div class="note-handle"><div class="note-control-selection"><div class="note-control-selection-bg"></div><div class="note-control-holder note-control-nw"></div><div class="note-control-holder note-control-ne"></div><div class="note-control-holder note-control-sw"></div><div class="note-control-sizing note-control-se"></div><div class="note-control-selection-info"></div></div></div><textarea class="note-codable" aria-multiline="true"></textarea><div class="note-editable card-block" contenteditable="true" role="textbox" aria-multiline="true" spellcheck="true" autocorrect="true" style="height: 200px;"><p style="text-align: center; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding: 0px; font-family: DauphinPlain; font-size: 70px; line-height: 90px;">About Us</p><hr style="margin: 0px; padding: 0px; clear: both; border-top: 0px; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));"><div id="Content" style="margin: 0px; padding: 0px; position: relative;"><div id="bannerL" style="margin: 0px 0px 0px -160px; padding: 0px; position: sticky; top: 20px; width: 160px; height: 10px; float: left; text-align: right; color: rgb(0, 0, 0); font-family: " open="" sans",="" arial,="" sans-serif;="" font-size:="" 14px;="" background-color:="" rgb(255,="" 255,="" 255);"=""></div><div id="bannerR" style="margin: 0px -160px 0px 0px; padding: 0px; position: sticky; top: 20px; width: 160px; height: 10px; float: right; color: rgb(0, 0, 0); font-family: " open="" sans",="" arial,="" sans-serif;="" font-size:="" 14px;="" background-color:="" rgb(255,="" 255,="" 255);"=""></div><div class="boxed" style="margin: 10px 28.7969px; padding: 0px; clear: both; color: rgb(0, 0, 0); font-family: " open="" sans",="" arial,="" sans-serif;="" font-size:="" 14px;="" text-align:="" center;="" background-color:="" rgb(255,="" 255,="" 255);"=""><div id="lipsum" style="margin: 0px; padding: 0px; text-align: justify;"></div></div></div><ul style="margin: 12px 0px 0px; display: flex; flex-direction: column; gap: 4px; padding-inline-start: 24px; color: rgb(17, 17, 17); font-family: -apple-system, Roboto, SegoeUI, " segoe="" ui",="" "helvetica="" neue",="" helvetica,="" "microsoft="" yahei",="" "meiryo="" meiryo,="" "arial="" unicode="" ms",="" sans-serif;="" background-color:="" rgb(255,="" 255,="" 255);"=""><li><span style="font-weight: bolder;">1) Service Quality</span>: Providing high-quality service that meets or exceeds customer expectations.</li><li><span style="font-weight: bolder;">2) Energizing Relationship</span>: Actively engaging with customers, understanding their needs, and building strong relationships.</li><li><span style="font-weight: bolder;">3) Value Added Service</span>: Beyond core tractor servicing, they offer additional services to enhance the overall customer experience.</li><li><span style="font-weight: bolder;">4) Assurance &amp; Trust</span>: Consistently delivering on promises and providing reliable service.</li></ul></div></div><output class="note-status-output" role="status" aria-live="polite"></output><div class="note-statusbar" role="status"><div class="note-resizebar" aria-label="Resize"><div class="note-icon-bar"></div><div class="note-icon-bar"></div><div class="note-icon-bar"></div></div></div><div class="modal note-modal link-dialog" aria-hidden="false" tabindex="-1" role="dialog" aria-label="Insert Link"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title">Insert Link</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">×</button></div><div class="modal-body"><div class="form-group note-form-group"><label for="note-dialog-link-txt-17134952126091" class="note-form-label">Text to display</label><input id="note-dialog-link-txt-17134952126091" class="note-link-text form-control note-form-control note-input" type="text"></div><div class="form-group note-form-group"><label for="note-dialog-link-url-17134952126091" class="note-form-label">To what URL should this link go?</label><input id="note-dialog-link-url-17134952126091" class="note-link-url form-control note-form-control note-input" type="text" value="http://"></div><div class="form-check sn-checkbox-open-in-new-window"><label class="form-check-label"><input type="checkbox" class="form-check-input" checked="" aria-label="Open in new window" aria-checked="true"> Open in new window</label></div><div class="form-check sn-checkbox-use-protocol"><label class="form-check-label"><input type="checkbox" class="form-check-input" checked="" aria-label="Use default protocol" aria-checked="true"> Use default protocol</label></div></div><div class="modal-footer"><input type="button" href="#" class="btn btn-primary note-btn note-btn-primary note-link-btn" value="Insert Link" disabled=""></div></div></div></div><div class="note-popover popover in note-link-popover bottom"><div class="arrow"></div><div class="popover-content note-children-container"><span><a target="_blank"></a>&nbsp;</span><div class="note-btn-group btn-group note-link"><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Edit" data-original-title="Edit"><i class="note-icon-link"></i></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Unlink" data-original-title="Unlink"><i class="note-icon-chain-broken"></i></button></div></div></div><div class="modal note-modal" aria-hidden="false" tabindex="-1" role="dialog" aria-label="Insert Image"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title">Insert Image</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">×</button></div><div class="modal-body"><div class="form-group note-form-group note-group-select-from-files"><label for="note-dialog-image-file-17134952126091" class="note-form-label">Select from files</label><input id="note-dialog-image-file-17134952126091" class="note-image-input form-control-file note-form-control note-input" type="file" name="files" accept="image/*" multiple="multiple"></div><div class="form-group note-group-image-url"><label for="note-dialog-image-url-17134952126091" class="note-form-label">Image URL</label><input id="note-dialog-image-url-17134952126091" class="note-image-url form-control note-form-control note-input" type="text"></div></div><div class="modal-footer"><input type="button" href="#" class="btn btn-primary note-btn note-btn-primary note-image-btn" value="Insert Image" disabled=""></div></div></div></div><div class="note-popover popover in note-image-popover bottom"><div class="arrow"></div><div class="popover-content note-children-container"><div class="note-btn-group btn-group note-resize"><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Resize full" data-original-title="Resize full"><span class="note-fontsize-10">100%</span></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Resize half" data-original-title="Resize half"><span class="note-fontsize-10">50%</span></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Resize quarter" data-original-title="Resize quarter"><span class="note-fontsize-10">25%</span></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Original size" data-original-title="Original size"><i class="note-icon-rollback"></i></button></div><div class="note-btn-group btn-group note-float"><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Float Left" data-original-title="Float Left"><i class="note-icon-float-left"></i></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Float Right" data-original-title="Float Right"><i class="note-icon-float-right"></i></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Remove float" data-original-title="Remove float"><i class="note-icon-rollback"></i></button></div><div class="note-btn-group btn-group note-remove"><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Remove Image" data-original-title="Remove Image"><i class="note-icon-trash"></i></button></div></div></div><div class="note-popover popover in note-table-popover bottom"><div class="arrow"></div><div class="popover-content note-children-container"><div class="note-btn-group btn-group note-add"><button type="button" class="note-btn btn btn-light btn-sm btn-md" tabindex="-1" title="" aria-label="Add row below" data-original-title="Add row below"><i class="note-icon-row-below"></i></button><button type="button" class="note-btn btn btn-light btn-sm btn-md" tabindex="-1" title="" aria-label="Add row above" data-original-title="Add row above"><i class="note-icon-row-above"></i></button><button type="button" class="note-btn btn btn-light btn-sm btn-md" tabindex="-1" title="" aria-label="Add column left" data-original-title="Add column left"><i class="note-icon-col-before"></i></button><button type="button" class="note-btn btn btn-light btn-sm btn-md" tabindex="-1" title="" aria-label="Add column right" data-original-title="Add column right"><i class="note-icon-col-after"></i></button></div><div class="note-btn-group btn-group note-delete"><button type="button" class="note-btn btn btn-light btn-sm btn-md" tabindex="-1" title="" aria-label="Delete row" data-original-title="Delete row"><i class="note-icon-row-remove"></i></button><button type="button" class="note-btn btn btn-light btn-sm btn-md" tabindex="-1" title="" aria-label="Delete column" data-original-title="Delete column"><i class="note-icon-col-remove"></i></button><button type="button" class="note-btn btn btn-light btn-sm btn-md" tabindex="-1" title="" aria-label="Delete table" data-original-title="Delete table"><i class="note-icon-trash"></i></button></div></div></div><div class="modal note-modal" aria-hidden="false" tabindex="-1" role="dialog" aria-label="Insert Video"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title">Insert Video</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">×</button></div><div class="modal-body"><div class="form-group note-form-group row-fluid"><label for="note-dialog-video-url-17134952126091" class="note-form-label">Video URL <small class="text-muted">(YouTube, Vimeo, Vine, Instagram, DailyMotion or Youku)</small></label><input id="note-dialog-video-url-17134952126091" class="note-video-url form-control note-form-control note-input" type="text"></div></div><div class="modal-footer"><input type="button" href="#" class="btn btn-primary note-btn note-btn-primary note-video-btn" value="Insert Video" disabled=""></div></div></div></div><div class="modal note-modal" aria-hidden="false" tabindex="-1" role="dialog" aria-label="Help"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title">Help</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">×</button></div><div class="modal-body" style="max-height: 300px; overflow: scroll;"><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>ESC</kbd></label><span>Escape</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>ENTER</kbd></label><span>Insert Paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+Z</kbd></label><span>Undo the last command</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+Y</kbd></label><span>Redo the last command</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>TAB</kbd></label><span>Tab</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>SHIFT+TAB</kbd></label><span>Untab</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+B</kbd></label><span>Set a bold style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+I</kbd></label><span>Set a italic style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+U</kbd></label><span>Set a underline style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+S</kbd></label><span>Set a strikethrough style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+BACKSLASH</kbd></label><span>Clean a style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+L</kbd></label><span>Set left align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+E</kbd></label><span>Set center align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+R</kbd></label><span>Set right align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+J</kbd></label><span>Set full align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+NUM7</kbd></label><span>Toggle unordered list</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+NUM8</kbd></label><span>Toggle ordered list</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+LEFTBRACKET</kbd></label><span>Outdent on current paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+RIGHTBRACKET</kbd></label><span>Indent on current paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM0</kbd></label><span>Change current block's format as a paragraph(P tag)</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM1</kbd></label><span>Change current block's format as H1</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM2</kbd></label><span>Change current block's format as H2</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM3</kbd></label><span>Change current block's format as H3</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM4</kbd></label><span>Change current block's format as H4</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM5</kbd></label><span>Change current block's format as H5</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM6</kbd></label><span>Change current block's format as H6</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+ENTER</kbd></label><span>Insert horizontal rule</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+K</kbd></label><span>Show Link Dialog</span></div><div class="modal-footer"><p class="text-center"><a href="http://summernote.org/" target="_blank">Summernote 0.8.18</a> · <a href="https://github.com/summernote/summernote" target="_blank">Project</a> · <a href="https://github.com/summernote/summernote/issues" target="_blank">Issues</a></p></div></div></div></div></div>
+			</div>
+			<div class="form-group">
+				<label for="" class="control-label">System Logo</label>
+				<div class="custom-file">
+	              <input type="file" class="custom-file-input rounded-circle" id="customFile" name="img" onchange="displayImg(this,$(this))">
+	              <label class="custom-file-label" for="customFile">Choose file</label>
+	            </div>
+			</div>
+			<div class="form-group d-flex justify-content-center">
+				<img src="./Tractor Service Management System_files/1632965940_vrs-logo.jpg" alt="" id="cimg" class="img-fluid img-thumbnail">
+			</div>
+			<div class="form-group">
+				<label for="" class="control-label">Website Cover</label>
+				<div class="custom-file">
+	              <input type="file" class="custom-file-input rounded-circle" id="customFile" name="cover" onchange="displayImg2(this,$(this))">
+	              <label class="custom-file-label" for="customFile">Choose file</label>
+	            </div>
+			</div>
+			<div class="form-group d-flex justify-content-center">
+				<img src="./Tractor Service Management System_files/1713494700_DSC_9694-1780x1000.jpg" alt="" id="cimg2" class="img-fluid img-thumbnail">
+			</div>
+			</form>
+		</div>
+		<div class="card-footer">
+			<div class="col-md-12">
+				<div class="row">
+					<button class="btn btn-sm btn-primary" form="system-frm">Update</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+<script>
+	function displayImg(input,_this) {
+	    if (input.files && input.files[0]) {
+	        var reader = new FileReader();
+	        reader.onload = function (e) {
+	        	$('#cimg').attr('src', e.target.result);
+	        	_this.siblings('.custom-file-label').html(input.files[0].name)
+	        }
+
+	        reader.readAsDataURL(input.files[0]);
+	    }
+	}
+	function displayImg2(input,_this) {
+	    if (input.files && input.files[0]) {
+	        var reader = new FileReader();
+	        reader.onload = function (e) {
+	        	_this.siblings('.custom-file-label').html(input.files[0].name)
+	        	$('#cimg2').attr('src', e.target.result);
+	        }
+
+	        reader.readAsDataURL(input.files[0]);
+	    }
+	}
+	function displayImg3(input,_this) {
+	    if (input.files && input.files[0]) {
+	        var reader = new FileReader();
+	        reader.onload = function (e) {
+	        	_this.siblings('.custom-file-label').html(input.files[0].name)
+	        	$('#cimg3').attr('src', e.target.result);
+	        }
+
+	        reader.readAsDataURL(input.files[0]);
+	    }
+	}
+	$(document).ready(function(){
+		 $('.summernote').summernote({
+		        height: 200,
+		        toolbar: [
+		            [ 'style', [ 'style' ] ],
+		            [ 'font', [ 'bold', 'italic', 'underline', 'strikethrough', 'superscript', 'subscript', 'clear'] ],
+		            [ 'fontname', [ 'fontname' ] ],
+		            [ 'fontsize', [ 'fontsize' ] ],
+		            [ 'color', [ 'color' ] ],
+		            [ 'para', [ 'ol', 'ul', 'paragraph', 'height' ] ],
+		            [ 'table', [ 'table' ] ],
+		            [ 'view', [ 'undo', 'redo', 'fullscreen', 'codeview', 'help' ] ]
+		        ]
+		    })
+	})
+</script>          </div>
+        </section>
+        <!-- /.content -->
+  <div class="modal fade" id="confirm_modal" role="dialog">
+    <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title">Confirmation</h5>
+      </div>
+      <div class="modal-body">
+        <div id="delete_content"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="confirm" onclick="">Continue</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="uni_modal" role="dialog">
+    <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title"></h5>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="submit" onclick="$(&#39;#uni_modal form&#39;).submit()">Save</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="uni_modal_right" role="dialog">
+    <div class="modal-dialog modal-full-height  modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="fa fa-arrow-right"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="viewer_modal" role="dialog">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+              <button type="button" class="btn-close" data-dismiss="modal"><span class="fa fa-times"></span></button>
+              <img src="http://localhost/vehicle_service/admin/?page=system_info" alt="">
+      </div>
+    </div>
+  </div>
+      </div>
+      <!-- /.content-wrapper -->
+      <script>
+  $(document).ready(function(){
+     window.viewer_modal = function($src = ''){
+      start_loader()
+      var t = $src.split('.')
+      t = t[1]
+      if(t =='mp4'){
+        var view = $("<video src='"+$src+"' controls autoplay></video>")
+      }else{
+        var view = $("<img src='"+$src+"' />")
+      }
+      $('#viewer_modal .modal-content video,#viewer_modal .modal-content img').remove()
+      $('#viewer_modal .modal-content').append(view)
+      $('#viewer_modal').modal({
+              show:true,
+              backdrop:'static',
+              keyboard:false,
+              focus:true
+            })
+            end_loader()  
+
+  }
+    window.uni_modal = function($title = '' , $url='',$size=""){
+        start_loader()
+        $.ajax({
+            url:$url,
+            error:err=>{
+                console.log()
+                alert("An error occured")
+            },
+            success:function(resp){
+                if(resp){
+                    $('#uni_modal .modal-title').html($title)
+                    $('#uni_modal .modal-body').html(resp)
+                    if($size != ''){
+                        $('#uni_modal .modal-dialog').addClass($size+'  modal-dialog-centered')
+                    }else{
+                        $('#uni_modal .modal-dialog').removeAttr("class").addClass("modal-dialog modal-md modal-dialog-centered")
+                    }
+                    $('#uni_modal').modal({
+                      show:true,
+                      backdrop:'static',
+                      keyboard:false,
+                      focus:true
+                    })
+                    end_loader()
+                }
+            }
+        })
+    }
+    window._conf = function($msg='',$func='',$params = []){
+       $('#confirm_modal #confirm').attr('onclick',$func+"("+$params.join(',')+")")
+       $('#confirm_modal .modal-body').html($msg)
+       $('#confirm_modal').modal('show')
+    }
+  })
+</script>
+<footer class="main-footer text-sm">
+        <strong>Copyright © 2024. 
+        <!-- <a href=""></a> -->
+        </strong>
+        All rights reserved.
+        <div class="float-right d-none d-sm-inline-block">
+          <b>SSS Tractor Service (by: <a href="http://localhost/vehicle_service/admin/suyogpagar2020@gmail.com" target="blank">SSS</a> )</b> v1.0
+        </div>
+      </footer>
+    <div id="sidebar-overlay"></div></div>
+    <!-- ./wrapper -->
+   
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+      $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="./Tractor Service Management System_files/bootstrap.bundle.min.js.download"></script>
+    <!-- ChartJS -->
+    <script src="./Tractor Service Management System_files/Chart.min.js.download"></script>
+    <!-- Sparkline -->
+    <script src="./Tractor Service Management System_files/sparkline.js.download"></script>
+    <!-- Select2 -->
+    <script src="./Tractor Service Management System_files/select2.full.min.js.download"></script>
+    <!-- JQVMap -->
+    <script src="./Tractor Service Management System_files/jquery.vmap.min.js.download"></script>
+    <script src="./Tractor Service Management System_files/jquery.vmap.usa.js.download"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="./Tractor Service Management System_files/jquery.knob.min.js.download"></script>
+    <!-- daterangepicker -->
+    <script src="./Tractor Service Management System_files/moment.min.js.download"></script>
+    <script src="./Tractor Service Management System_files/daterangepicker.js.download"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="./Tractor Service Management System_files/tempusdominus-bootstrap-4.min.js.download"></script>
+    <!-- Summernote -->
+    <script src="./Tractor Service Management System_files/summernote-bs4.min.js.download"></script>
+    <script src="./Tractor Service Management System_files/jquery.dataTables.min.js.download"></script>
+    <script src="./Tractor Service Management System_files/dataTables.bootstrap4.min.js.download"></script>
+    <script src="./Tractor Service Management System_files/dataTables.responsive.min.js.download"></script>
+    <script src="./Tractor Service Management System_files/responsive.bootstrap4.min.js.download"></script>
+    <!-- overlayScrollbars -->
+    <!-- <script src="http://localhost/vehicle_service/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script> -->
+    <!-- AdminLTE App -->
+    <script src="./Tractor Service Management System_files/adminlte.js.download"></script>
+    <div class="daterangepicker ltr show-ranges opensright">
+      <div class="ranges">
+        <ul>
+          <li data-range-key="Today">Today</li>
+          <li data-range-key="Yesterday">Yesterday</li>
+          <li data-range-key="Last 7 Days">Last 7 Days</li>
+          <li data-range-key="Last 30 Days">Last 30 Days</li>
+          <li data-range-key="This Month">This Month</li>
+          <li data-range-key="Last Month">Last Month</li>
+          <li data-range-key="Custom Range">Custom Range</li>
+        </ul>
+      </div>
+      <div class="drp-calendar left">
+        <div class="calendar-table"></div>
+        <div class="calendar-time" style="display: none;"></div>
+      </div>
+      <div class="drp-calendar right">
+        <div class="calendar-table"></div>
+        <div class="calendar-time" style="display: none;"></div>
+      </div>
+      <div class="drp-buttons"><span class="drp-selected"></span><button class="cancelBtn btn btn-sm btn-default" type="button">Cancel</button><button class="applyBtn btn btn-sm btn-primary" disabled="disabled" type="button">Apply</button> </div>
+    </div>
+    <div class="jqvmap-label" style="display: none; left: 1093.83px; top: 394.361px;">Idaho</div>  
+
+</body></html>
